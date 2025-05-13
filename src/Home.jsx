@@ -1,0 +1,66 @@
+import { useState } from 'react'
+import './Home.css'
+
+function Home() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+       <div class="container">
+    <div class="calculator">
+      <div class="calculator-header">
+        <h1>Calculadora</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+          <span class="material-icons light-icon">light_mode</span>
+          <span class="material-icons dark-icon">dark_mode</span>
+        </button>
+      </div>
+      
+      <div class="calculator-history">
+        <div id="history-display" class="history-display"></div>
+      </div>
+      
+      <div class="calculator-display">
+        <div id="display" class="display">0</div>
+      </div>
+      
+      <div class="calculator-buttons">
+        <button class="btn btn-clear" data-action="clear">C</button>
+        <button class="btn btn-operation" data-action="backspace">
+          <span class="material-icons">backspace</span>
+        </button>
+        <button class="btn btn-operation" data-action="percent">%</button>
+        <button class="btn btn-operation" data-operation="/">÷</button>
+        
+        <button class="btn" data-number="7">7</button>
+        <button class="btn" data-number="8">8</button>
+        <button class="btn" data-number="9">9</button>
+        <button class="btn btn-operation" data-operation="*">×</button>
+        
+        <button class="btn" data-number="4">4</button>
+        <button class="btn" data-number="5">5</button>
+        <button class="btn" data-number="6">6</button>
+        <button class="btn btn-operation" data-operation="-">−</button>
+        
+        <button class="btn" data-number="1">1</button>
+        <button class="btn" data-number="2">2</button>
+        <button class="btn" data-number="3">3</button>
+        <button class="btn btn-operation" data-operation="+">+</button>
+        
+        <button class="btn btn-operation" data-action="sqrt">√</button>
+        <button class="btn" data-number="0">0</button>
+        <button class="btn" data-number=".">.</button>
+        <button class="btn btn-equals" data-action="calculate">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/display.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/theme-switcher.js"></script>
+    </>
+  )
+}
+
+export default App
