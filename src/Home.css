@@ -1,6 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --primary-color: #4a5568;
+  --secondary-color: #2d3748;
+  --background-color: #f7fafc;
+  --display-background: #edf2f7;
+  --button-color: #e2e8f0;
+  --button-hover: #cbd5e0;
+  --button-operation: #ebf8ff;
+  --button-operation-hover: #bee3f8;
+  --button-equals: #c6f6d5;
+  --button-equals-hover: #9ae6b4;
+  --button-clear: #fed7d7;
+  --button-clear-hover: #feb2b2;
+  --text-color: #1a202c;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --primary-color: #a0aec0;
+  --secondary-color: #cbd5e0;
+  --background-color: #1a202c;
+  --display-background: #2d3748;
+  --button-color: #4a5568;
+  --button-hover: #718096;
+  --button-operation: #2c5282;
+  --button-operation-hover: #2b6cb0;
+  --button-equals: #276749;
+  --button-equals-hover: #2f855a;
+  --button-clear: #9b2c2c;
+  --button-clear-hover: #c53030;
+  --text-color: #f7fafc;
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }
